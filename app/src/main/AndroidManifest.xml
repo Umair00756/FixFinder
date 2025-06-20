@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FixFinder"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,6 +24,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".userSignupActivity" />
+        <activity android:name=".serviceProviderSignup" />
+        <activity android:name=".userLogin" />
+        <activity android:name=".workerLogin" />
+        <activity android:name=".dashboardUser" />
+        <activity android:name=".dashboardWorker" />
+        <activity android:name=".workerSignup" />
     </application>
 
 </manifest>
