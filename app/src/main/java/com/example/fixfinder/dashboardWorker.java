@@ -4,20 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class dashboardUser extends AppCompatActivity {
+public class dashboardWorker extends AppCompatActivity {
 
     FirebaseAuth auth;
     Button btn;
@@ -27,7 +22,7 @@ public class dashboardUser extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.dashboard_user);
+        setContentView(R.layout.dashboard_worker);
 
         auth = FirebaseAuth.getInstance();
         btn = findViewById(R.id.button5);

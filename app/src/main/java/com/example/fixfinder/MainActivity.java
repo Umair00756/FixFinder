@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,userSignupActivity.class);
+                Intent intent = new Intent(MainActivity.this, dashboardUser.class);
                 startActivity(intent);
             }
         });
