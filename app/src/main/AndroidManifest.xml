@@ -13,6 +13,12 @@
         android:theme="@style/Theme.FixFinder"
         tools:targetApi="31">
         <activity
+            android:name=".plumber"
+            android:exported="false" />
+        <activity
+            android:name=".userDashBoard"
+            android:exported="false" />
+        <activity
             android:name=".dashboardUser"
             android:exported="false" />
         <activity
