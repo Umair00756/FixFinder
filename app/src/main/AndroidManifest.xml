@@ -13,15 +13,6 @@
         android:theme="@style/Theme.FixFinder"
         tools:targetApi="31">
         <activity
-            android:name=".plumber"
-            android:exported="false" />
-        <activity
-            android:name=".userDashBoard"
-            android:exported="false" />
-        <activity
-            android:name=".dashboardUser"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -30,9 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".userSignupActivity" />
+        <activity android:name=".userDashBoard" />
+        <activity android:name=".DashboardOfWorker"/>
         <activity android:name=".userLogin" />
-        <activity android:name=".dashboardWorker" />
+        <activity android:name=".userSignupActivity" />
+        <activity android:name=".plumber" />
     </application>
 
 </manifest>

@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        user = findViewById(R.id.button2);
+        user = findViewById(R.id.continueasuser);
         user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        worker = findViewById(R.id.button3);
+        worker = findViewById(R.id.continueasworker);
         worker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,userLogin.class);
+                Intent intent = new Intent(MainActivity.this,userSignupActivity.class);
                 startActivity(intent);
             }
         });

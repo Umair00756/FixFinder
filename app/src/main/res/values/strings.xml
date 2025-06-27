@@ -1,12 +1,11 @@
+<resources>
+    <string name="app_name">FixFinder</string>
+    <string-array name="services_array">
 
- <resources>
-<string name="app_name">FixFinder</string>
-<string-array name="services_array">
+        <item>Plumber</item>
+        <item>Electrician</item>
+        <item>Carpenter</item>
+        <item>Mechanic</item>
 
-    <item>Plumber</item>
-    <item>Electrician</item>
-    <item>Carpenter</item>
-    <item>Mechanic</item>
-
-</string-array>
+    </string-array>
 </resources>

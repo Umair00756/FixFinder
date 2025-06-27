@@ -32,15 +32,7 @@ public class userSignupActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     ProgressDialog progressDialog;
 
-    public void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            Intent intent = new Intent(getApplicationContext(),userLogin.class);
-            startActivity(intent);
-            finish();
-        }
-    }
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

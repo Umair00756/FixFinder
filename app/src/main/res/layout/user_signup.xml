@@ -23,7 +23,7 @@
     <EditText
         android:id="@+id/passwordLoginWorker"
         android:layout_width="310dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:height="50dp"
         android:background="@drawable/edit_text_bg"
         android:drawableStart="@drawable/pass_00000"

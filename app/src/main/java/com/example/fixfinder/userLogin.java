@@ -29,17 +29,6 @@ public class userLogin extends AppCompatActivity {
     Button loginButton;
     FirebaseAuth mAuth;
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
-            Intent intent = new Intent(getApplicationContext(), dashboardWorker.class);
-            startActivity(intent);
-            finish();
-        }
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +69,7 @@ public class userLogin extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(userLogin.this, "Login successful",
                                             Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(getApplicationContext(), dashboardWorker.class);
+                                    Intent intent = new Intent(getApplicationContext(), DashboardOfWorker.class);
                                     startActivity(intent);
                                     finish();
                                 } else {
